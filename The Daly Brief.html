@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Daily Brief - Climate Change</title>
+    <style>
+        /* CSS Box Model & Fundamentals */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #1e293b;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Colorful Header & Navigation */
+        header {
+            background-color: #174A6E;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 34px;
+            color: #fde047;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin-top: 6px;
+            color: #bae6fd;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #0f324a;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #7dd3fc;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: #fde047;
+            text-decoration: underline;
+        }
+
+        /* Main Layout using Flexbox */
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        article {
+            flex: 2 1 600px;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #cccccc;
+        }
+
+        aside {
+            flex: 1 1 300px;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #cccccc;
+        }
+
+        /* Colorful Headings & Text */
+        article h2 {
+            color: #0f766e;
+            font-size: 26px;
+            margin-top: 0;
+        }
+
+        article h3 {
+            color: #b45309;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .byline {
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+
+        article h4 {
+            color: #174A6E;
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        aside h3 {
+            color: #9d174d;
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        mark {
+            background-color: #fef08a;
+            color: #854d0e;
+            font-weight: bold;
+        }
+
+        /* Image & Figure */
+        figure {
+            margin: 15px 0;
+        }
+
+        figure img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #0f766e;
+        }
+
+        figcaption {
+            font-size: 14px;
+            color: #0f766e;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 6px;
+        }
+
+        /* Related News Links */
+        ul li a {
+            color: #0369a1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            color: #be123c;
+            text-decoration: underline;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        caption {
+            font-weight: bold;
+            color: #0f766e;
+            margin-bottom: 8px;
+        }
+
+        th, td {
+            border: 1px solid #999999;
+            padding: 8px;
+            text-align: left;
+        }
+        th:nth-child(1),
+        td:nth-child(1),
+        th:nth-child(2),
+        td:nth-child(2) {
+            padding: 14px 12px;
+        }
+        th {
+            background-color: #174A6E;
+            color: #fde047;
+        }
+
+        td {
+            color: #1e293b;
+        }
+
+        /* Form Styling */
+        section.subscribe-section {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #eeeeee;
+        }
+
+        legend {
+            color: #174A6E;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #0f766e;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #999999;
+            color: #1e293b;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #114d48;
+        }
+
+        button {
+            background-color: #0f887e;
+            color: #ffffff;
+            font-weight: bold;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #174A6E;
+            color: #fde047;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #174A6E;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer address {
+            color: #fde047;
+            font-style: normal;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>The Daily Brief</h1>
+        <p>Edition Date: <time datetime="2026-11-22">November 22, 2026</time></p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#environment">Environment</a>
+        <a href="#science">Science</a>
+        <a href="#subscribe">Subscribe</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Featured News Article -->
+        <article>
+            <h2>Global Action Needed as Climate Change Impacts Rising</h2>
+            <h3>Scientists urge faster shift to renewable energy to protect coastal cities and agriculture.</h3>
+            
+            <p class="byline">By Hafsa | Published on <time datetime="2026-11-22">November 22, 2026</time></p>
+
+            <figure>
+                <!-- உங்களுக்கு விருப்பமான படத்தின் பெயர் அல்லது URL-ஐ கீழே உள்ள src="" பகுதியில் மாற்றவும் -->
+                <img src="Climatechange.jpeg" alt="Climatechange">
+                <figcaption>Renewable energy sources play a key role in reducing carbon emissions.</figcaption>
+            </figure>
+
+            <section>
+                <h4>Understanding the Current Situation</h4>
+                <p>Climate change refers to long-term shifts in global temperatures and weather patterns. Recent reports show that <mark>average global temperatures have risen steadily</mark> over the past century due to human activities such as burning fossil fuels.</p>
+                <p>Extreme weather events, including heatwaves, heavy rainfall, and prolonged droughts, are becoming more frequent across many regions.</p>
+            </section>
+
+            <!-- Data Table -->
+            <section>
+                <h4>Key Climate Indicators</h4>
+                <table>
+                    <caption>Global Climate Change Overview</caption>
+                    <thead>
+                        <tr>
+                            <th>Factor</th>
+                            <th>Current Trend</th>
+                            <th>Primary Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Global Temperature</td>
+                            <td>Increasing</td>
+                            <td>More frequent heatwaves</td>
+                        </tr>
+                        <tr>
+                            <td>Sea Levels</td>
+                            <td>Rising</td>
+                            <td>Coastal flooding risk</td>
+                        </tr>
+                        <tr>
+                            <td>Renewable Energy Use</td>
+                            <td>Growing</td>
+                            <td>Lower carbon emissions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+
+        <!-- Supporting Content (Sidebar) -->
+        <aside>
+            <section>
+                <h3>Related News</h3>
+                <ul>
+                    <li><a href="#news1">Solar Power Adoption Reaches New Record in 2026</a></li>
+                    <li><a href="#news2">How Urban Forests Help Cool Growing Cities</a></li>
+                    <li><a href="#news3">Water Conservation Methods for Sustainable Farming</a></li>
+                </ul>
+            </section>
+
+            <!-- Contact / Subscribe Form -->
+            <section class="subscribe-section" id="subscribe">
+                <h3>Contact / Subscribe</h3>
+                <p>Get daily climate and world news updates in your inbox.</p>
+                
+                <form action="/subscribe" method="post">
+                    <fieldset>
+                        <legend>Reader Details</legend>
+                        
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        <label for="message">Feedback or Topic Request:</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Write your message here..."></textarea>
+
+                        <button type="submit">Subscribe Now</button>
+                    </fieldset>
+                </form>
+            </section>
+        </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <address>Contact Editorial Team: editor@thedailybrief.com</address>
+        <p>&copy; 2026 The Daily Brief. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
